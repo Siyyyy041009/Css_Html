@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="to-do-app">
+        <div class="title">To-do-App</div>
+        <div class="todo-form">
+            <input type="text" class="todo-input" placeholder="add-todo">
+            <!-- placeholder占位符号 -->
+            <div class="todo-bottom">
+                add-todo
+            </div>
+        </div>
+        <div class="todo-item comp" >
+            <div>
+                <input type="checkbox">
+                <span class="name">哔哩哔哩</span>
+            </div>
+        <div class="check">跳转</div>
+        </div>
+        <div class="todo-item">
+            <div>
+                <input type="checkbox">
+                <span class="name">哔哩哔哩</span>
+            </div>
+        <div class="check">跳转</div>
+        </div>
+        <div class="todo-item">
+            <div>
+                <input type="checkbox">
+                <span class="name">哔哩哔哩</span>
+            </div>
+        <div class="check">跳转</div>
+        </div>
+        
+    </div>
+</body>
+<style>
+    .comp{
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+    .check{
+        color: red;
+    }
+    .todo-item{
+        display: flex;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 80%;
+        height: 50px;
+        margin: 8px auto;
+        padding: 16px;
+        box-shadow: rgba(149,157,165,0.2)0px 8px 20px;
+        align-items: center;
+        /* 框内所有元素垂直居中 */
+        justify-content: space-between;
+        /* 框内元素自动平分空间 */
+    }
+    .todo-input{
+        margin-bottom:20px ;
+        padding-left:15px;
+        border: 1px #dfe1e5 solid;
+        outline: none;/*选中时无边框显示*/
+        width: 60%;
+        height: 50px;
+        border-radius: 20px 0 0 20px;
+    }
+    .todo-bottom{
+        padding-left:15px;
+        border: 1px #dfe1e5 solid;
+        outline: none;/*选中时无边框显示*/
+        width: 10%;
+        height: 50px;
+        border-radius: 0px 20px 20px 0px;
+        background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,251,1)
+        );
+        color: #fff;
+        line-height: 50px;
+        /* 行高，当行高与高度一样时加上文本居中就是横竖居中 */
+        cursor: pointer;
+        /* 放入按钮时，变成点击 */
+        user-select: none;
+        /*不可选中复制 */
+    }
+    .todo-form{
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;/*横向排放*/
+    }
+    body{
+        background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,251,1)
+        );
+    }
+    .to-do-app{
+        height: 500px;
+        width:98%;
+        background: #fff;
+        padding-top: 30px;/*内边距为30px*，不配合box-size会影响盒子大小/
+        box-sizing: border-box;
+        border-radius: 5px;/*圆角边框*/
+        margin-top: 40px;/*外顶部边距*/
+        margin-left: 1%;
+    }
+    .title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+</style>
+</html>
